@@ -3,36 +3,28 @@
    author : Aysha Shaban Galal
    Layer  : MCAL 
    SWC    : GPIO / DIO
-
 */
-
-#ifndef _DIO_PRIVATE_H_
-#define _DIO_PRIVATE_H_
+#ifndef _GPIO_PRIVATE_H_
+#define _GPIO_PRIVATE_H_
 
 /*Group A*/
-#define PORTA   *((volatile u8*)0x3B)
-#define DDRA    *((volatile u8*)0x3A)
-#define PINA    *((volatile u8*)0x39)
-
+#define PORTA_REG   *((volatile u8*)0x3B)
+#define DDRA_REG    *((volatile u8*)0x3A)
+#define PINA_REG    *((volatile u8*)0x39)
 
 /*Group B*/
-#define PORTB   *((volatile u8*)0x38)
-#define DDRB    *((volatile u8*)0x37)
-#define PINB    *((volatile u8*)0x36)
-
+#define PORTB_REG   *((volatile u8*)0x38)
+#define DDRB_REG    *((volatile u8*)0x37)
+#define PINB_REG    *((volatile u8*)0x36)
 
 /*Group C*/
-#define PORTC   *((volatile u8*)0x35)
-#define DDRC    *((volatile u8*)0x34)
-#define PINC    *((volatile u8*)0x33)
-
+#define PORTC_REG   *((volatile u8*)0x35)
+#define DDRC_REG    *((volatile u8*)0x34)
+#define PINC_REG    *((volatile u8*)0x33)
 
 /*Group D*/
-#define PORTD   *((volatile u8*)0x32)
-#define DDRD    *((volatile u8*)0x31)
-#define PIND    *((volatile u8*)0x30)
-
-
-
+#define PORTD_REG   *((volatile u8*)0x32)
+#define DDRD_REG    *((volatile u8*)0x31)
+#define PIND_REG    *((volatile u8*)0x30)
 
 #endif
